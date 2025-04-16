@@ -1,0 +1,24 @@
+<div class="main-container">
+    <div class="flex flex-col md:flex-row items-center py-24">
+        <img class="object-cover h-auto w-96" 
+                src="/assets/images/index/screenshot-2.png" 
+                alt="Open Additives project"
+            />
+        <div class="flex-1 py-10 px-0 md:px-14">
+            <h1 class="text-4xl font-semibold text-slate-500">Open
+            <span class="text-4xl font-bold text-slate-800"> Additives</span></h1>
+            <br/>
+            <p class="text-lg">
+                Get information on the additives you ingest!
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    {% include "partials/index/_googlePlay.njk" %}
+                </div>
+                <div>
+                    {% include "partials/index/_appStore.njk" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
