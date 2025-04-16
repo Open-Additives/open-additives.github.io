@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./site.css"/>
+    <title>Open Additives Website
+        
+    </title>
+    <meta
+        name="description"
+        content="  Website of the Open Additives project  "/>
+</head>
+  <body class="font-sans leading-normal tracking-normal text-gray-700">
+    <main>
+      <header class="block sm:hidden" x-data="{show: false}" @click.away="show = false">
+    <div class="mt-8">
+        <div class="flex justify-center mb-8 mp-4">
+                <a class="no-underline text-xl font-extrabold" href="/">Open Additives</a>
+        </div>
+        <div class="flex pl-6 justify-center">
+            <div @click="show = ! show" class="justify-content-center">
+                <div aria-label="menu" class="no-underline">
+                    
+    <div class="inline-block items-center badge font-medium flex text-gray-500">
+      
+    <div class="mr-2">
+      
+    <svg class="self-center" width="24px" height="24px" viewBox="0 0 512 512">
+      <title>Menu</title>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"/>
+    </svg>
+    </div>
+    <div>
+      <span class="select-none pt-1 pl-1 text-xl font-regular">
+        Menu
+      </span>
+    </div>
+  
+    </div>
+    
+                </div>
+            </div>
+        </div>
+        <nav x-show="show" class="main-container text-center pt-10 flex-col sm:flex-row space-x-0 sm:space-x-6">
+            
+                <div class="pb-4 md:pb-0">
+                    
+                    
+                        <a aria-label="Home" class="text-gray-600 no-underline hover:hover-link" href="/">
+                            Home
+                        </a>
+                    
+                </div>
+            
+                <div class="pb-4 md:pb-0">
+                    
+                    
+                        <a aria-label="Blog" class="text-gray-600 no-underline hover:hover-link" href="/blog/">
+                            Blog
+                        </a>
+                    
+                </div>
+            
+        </nav>
+    </div>
+</header>
+
+<header class="hidden sm:block" class="text-lg text-black bg-white py-6 sm:py-8 md:py-10">
+    <nav class="flex flex-col sm:flex-row main-container sm:py-10 sm:py-14 space-x-0 sm:space-x-6">
+        <div class="flex-1">
+            <a class="no-underline text-xl font-extrabold" href="/">Open Additives</a>
+        </div>
+        <div class="flex-1">
+            <div class="flex flex-row items-center justify-end h-full">
+                
+                    <div class="pl-6">
+                        
+                        
+                            <a aria-label="Home" class="text-gray-600 no-underline hover:hover-link" href="/">
+                                Home
+                            </a>
+                        
+                    </div>
+                
+                    <div class="pl-6">
+                        
+                        
+                            <a aria-label="Blog" class="text-gray-600 no-underline hover:hover-link" href="/blog/">
+                                Blog
+                            </a>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </nav>
+</header>
+      
+        
+<div class="main-container text-center">
+    <p class="text-xl">Nothing here.</p>
+    <p>Maybe on the <a href="/">home page</a>?</p>
+</div>
+      
+      <footer class="text-black pb-20 pt-14 sm:pt-20 md:pt-32 main-container flex-row md:flex px-2 md:px-0">
+  <div class="pt-1 pb-3 md:pb-0 text-center md:text-left">
+    <p class="text-gray-500 inline-block align-middle">Open Additives - GNU General Public License v3.0</p>
+  </div>
+  <div class="flex-1"></div>
+  <div class="flex-none mt-4 md:mt-0">
+    <div class="flex justify-around items-center space-x-2 md:space-x-6">
+      <a aria-label="email" target="_blank" href="mailto:openadditives@gmail.com@gmail.com?subject=Hi">
+        <svg class="fill-gray-500 hover:hover-link" width="28px" height="28px"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Mail</title><path d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"/></svg></svg>
+      </a>
+      
+    </div>
+  </div>
+</footer>
+    </main>
+    <script defer src="/js/alpine.js?v=3.10.4"></script>
+  </body>
+</html>

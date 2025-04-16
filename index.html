@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./site.css">
+    <title>Open Additives Website
+        
+            Home
+        
+    </title>
+    <meta name="description" content="  Website of the Open Additives project  ">
+</head>
+  <body class="font-sans leading-normal tracking-normal text-gray-700">
+    <main>
+      <header class="block sm:hidden" x-data="{show: false}" @click.away="show = false">
+    <div class="mt-8">
+        <div class="flex justify-center mb-8 mp-4">
+                <a class="no-underline text-xl font-extrabold" href="/">Open Additives</a>
+        </div>
+        <div class="flex pl-6 justify-center">
+            <div @click="show = ! show" class="justify-content-center">
+                <div aria-label="menu" class="no-underline">
+                    
+    <div class="inline-block items-center badge font-medium flex text-gray-500">
+      
+    <div class="mr-2">
+      
+    <svg class="self-center" width="24px" height="24px" viewBox="0 0 512 512">
+      <title>Menu</title>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"></path>
+    </svg>
+    </div>
+    <div>
+      <span class="select-none pt-1 pl-1 text-xl font-regular">
+        Menu
+      </span>
+    </div>
+  
+    </div>
+    
+                </div>
+            </div>
+        </div>
+        <nav x-show="show" class="main-container text-center pt-10 flex-col sm:flex-row space-x-0 sm:space-x-6">
+            
+                <div class="pb-4 md:pb-0">
+                    
+                        <a aria-label="Home" class="no-underline hover:hover-link text-black font-semibold" href="/">
+                            Home
+                        </a>
+                    
+                    
+                </div>
+            
+                <div class="pb-4 md:pb-0">
+                    
+                    
+                        <a aria-label="Blog" class="text-gray-600 no-underline hover:hover-link" href="/blog/">
+                            Blog
+                        </a>
+                    
+                </div>
+            
+        </nav>
+    </div>
+</header>
+
+<header class="hidden sm:block">
+    <nav class="flex flex-col sm:flex-row main-container sm:py-10 sm:py-14 space-x-0 sm:space-x-6">
+        <div class="flex-1">
+            <a class="no-underline text-xl font-extrabold" href="/">Open Additives</a>
+        </div>
+        <div class="flex-1">
+            <div class="flex flex-row items-center justify-end h-full">
+                
+                    <div class="pl-6">
+                        
+                            <a aria-label="Home" class="no-underline hover:hover-link text-black font-semibold" href="/">
+                                Home
+                            </a>
+                        
+                        
+                    </div>
+                
+                    <div class="pl-6">
+                        
+                        
+                            <a aria-label="Blog" class="text-gray-600 no-underline hover:hover-link" href="/blog/">
+                                Blog
+                            </a>
+                        
+                    </div>
+                
+            </div>
+        </div>
+    </nav>
+</header>
+      
+        
+<div class="main-container">
+    <div class="flex flex-col md:flex-row items-center py-24">
+        <img class="object-cover h-auto w-96 lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAZCAYAAAAFbs/PAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nH2UC2/aVhTH/T2n7bNsrVpN3SPrF5i2QBPoGq1KSpqELECwDcnWJmpjMBCcQNK1xfj9wjb3/Kd7gWittF3pr+PH+fmc/31Yerz2/U6x8IteebHNNooFun/vG/rqyy+E7t/7moqFddrZfs7Wf/25u/bDo21p69lTvdlsmL2eTiftFpXLJXr48IFQuVSidrtFut6l5nF9svVbuSs1GnVmGAYRANt2SNM07O3tCWkXF7Ati4gIxvCS1WtHc6nVUmk8HhFjRLPZDFEUkeu65HkeRXFCsywDATQej6mlKiSpqkyDQZ9838d0atJ0OiXTNGHaNkzXp4kfkjfL0DcMUuQmSW1VocvLAQVBAJ5sWRaPsBwXUy+A6UfkpzkGxhUpCgdaKq4MA8lsBs914dkWXMuE69rwwghulCDOGYbX11AUGdLpSRvv/34HMbj1eQbk6SIuHoKPd7c3aKkypJO2ipubsXiYpSmyJEYahyLmeYYsW4Dj0Qiq0gT3IG741KVpijxbJK2Upql4NxpdLwBZacC4GiLNUsRxDD61POk/gbp8hIHRR5IlfA2QJIlIms/nYIyJyAdvW3g4lPfRHXYQJAECPxAQr7JKZIyJeHuzNH10fAB90EEQB/A9H3w9eGu8Hd4KWwJ3FY7rVfR1DWHow/sf4HYFNOuHGPS6iKMQvh8gDMNP2mKfA/VGFb1+B2EUiK9zgIubz/P8zssdUF2ZnoV3AK/w75n6BKgdH6C3NO15HviuXflYrcnnpqmva+T7LizLItu24TiOAJci3tpodE0tVSZumga9DgW+B9u2OSC2+FLinvu5MoaL81BrHNC59oY+WFN6/3ECyxIHiCbmZBVFlX5PJ7nZIOlltcL+fHtOH1wHE9slj1dyHCHX8+C4rjhcnY5Gh9X9ubS5WehUDvYnp2dn7PT1a3r16i/xp2i3VXF9fn5GF2/fsFrtj4/l0oYmrX337fONJwVtd/dFXqns0Nazp/SkuC7Er3crO7T3spKXNovaTz8++v0fPwc3EWcuiQ0AAAAASUVORK5CYII=" alt="Open Additives project" data-src="/assets/images/index/screenshot-2.png" width="1280" height="2642">
+        <div class="flex-1 py-10 px-0 md:px-14">
+            <h1 class="text-4xl font-semibold text-slate-500">Open
+            <span class="text-4xl font-bold text-slate-800"> Additives</span></h1>
+            <br>
+            <p class="text-lg">
+                Get information on the additives you ingest!
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=nmf.earth">
+    <div class="flex mt-3 w-48 h-14 bg-black text-white rounded-lg items-center justify-center">
+        <div class="mr-3">
+            <svg viewBox="30 336.7 120.9 129.2" width="30">
+                <path fill="#FFD400" d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"></path>
+                <path fill="#FF3333" d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"></path>
+                <path fill="#48FF48" d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"></path>
+                <path fill="#3BCCFF" d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"></path>
+            </svg>
+        </div>
+        <div>
+            <div class="text-xs">GET IT ON</div>
+            <div class="text-xl font-semibold font-sans -mt-1">Google Play</div>
+        </div>
+    </div>
+</a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://apps.apple.com/us/app/nmf-earth/id1494561829">
+    <div class="flex mt-3 w-48 h-14 bg-black text-white rounded-xl items-center justify-center">
+        <div class="mr-3">
+            <svg viewBox="0 0 384 512" width="30">
+                <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15
+                        0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9
+                        75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4
+                        24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+            </svg>
+        </div>
+        <div>
+            <div class="text-xs">Download on the</div>
+            <div class="text-2xl font-semibold font-sans -mt-1">App Store</div>
+        </div>
+    </div>
+</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divide-solid divide-y main-container">
+  <div class="main-container divide-solid divide-y">
+    <div class="flex flex-col pt-20 pb-32">
+        <div class="py-10">
+            <h2 class="text-5xl text-center font-bold">Features</h2>
+        </div>
+        <div class="flex flex-col md:flex-row justify-items-center">
+            <div class="flex-1 md:px-2 pt-10 md:pt-0 justify-center">
+                <ul class="space-y-1">
+                    <li class="font-semibold">Scan ingredient list</li>
+                    <li>Automatically found all the additives for you thanks to ML</li>
+                    <li class="pt-4 font-semibold">Additives list</li>
+                    <li>Scroll and get info about all the additives of our database</li>
+                </ul>
+            </div>
+            <div class="flex-1 md:px-2 pt-10 md:pt-0 justify-center">
+                <ul class="space-y-1">
+                    <li class="font-semibold">Scan bar code</li>
+                    <li>Get the additives thanks to Open Food Fact database</li>
+                    <li class="pt-4 font-semibold">Offline support</li>
+                    <li>Besides the scan of bar code, the rest of the app works offline</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div></div>
+</div>
+</div>
+
+<div class="bg-gray-100 py-20 md:py-8">
+    <div class="main-container pt-10 md:pt-32">
+        <h2 class="text-5xl text-center font-bold text-gray-900">App preview</h2>
+        <p class="text-xl text-center py-8">Free, without ads and no tracking</p>
+    </div>
+    <div class="main-container flex flex-col md:flex-row md:pb-14">
+        <div class="basis-1/3 items-center pt-10 md:pt-0">
+            <figure class="mx-auto w-72 h-auto">
+                <img class="w-full rounded-xl lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAZCAYAAAAFbs/PAAAACXBIWXMAAAsTAAALEwEAmpwYAAAERElEQVR4nCXGaWyTBRzH8Ydsg7gBIkIkeHBHxcTECwMvSFBJFHyhJpAA2wQnzilySeQoR9dRV9auMJhlK1u3dc+ebn16PE+Ppw8d3dZ2R7utozt6bQyICYr4WjCB/n9m9cUn3y9Tp9e6WXNL2usWsx2smVSVF6ikeC8V79uTe7a9jdyiM9vW2pzS6zQuxm6zpsPh0N+ZTIai0QjZeJ602pocnucpEhmidDpFoWDfIxvfmWICAX82k07Sk8f/4OEfD2g8fhuy5IVP8mA8PoaHfz6gf588RiaVzAa6bz5jvEInhf0OmhqSaHLAhcyIj2ZiMk2PyjQdk2kmJuH3qQCNhV3kd3cR02W6TKLpLAXMPyJsOUAjznKKeyowKlRg7iP2Moq7KxDkfyEXqyam4zcFOa59Sf76txC+8TJFW9ci1r4Bw60bMdz2JsJNa2mgcT28Vz8ia105MbzxDPradyJhX4NZ7xLck1bgvnclZt2rcMf9Cia6liLWuASy7j3wv5aAcTSfRKjjUyQcq5ESliMlvIaUYzUyzjVI2F7FYMsy3NIsA392EzhFKRh70zF0N3+MSOtKDJiWImpegYj5JYywyzFgWgJfXREE5QtgFR+CVZaCEUw/QTZuRa/hRchXChEwLETv9UKEjAsQqJ8P4dJ82KqeB1u1CZyuBIxo+gFewxbI+sWwq/MhXiqAWJMPV00+HNUF6FLlw6lZBKvufVgNxWCEpgoIdZvhVC8Eq8gDd34+OisLcizKArQr8mBXF4HXvQtbQzEYW2MFrDWbwSmK0HhkHq4fyctpOJoH4/G5zoP5zHNov/gOLNf2gekyHEGrahsMh5dDs78Q1QcWQfPNnCJcKiuE+usF0B5cjMsnPkBjdSmYzuun0Kb+Csaf34b24Droyl9H7fcboS1/A5pvN0BVugqasvXQHd+O+ovlYCwGJcyag2g+vQN1h7fh2tHtMJzYgfrjn0F/6BOoy7ZA891W1J7YjfqLx8B0NqjAXzkEW/VudFz4AhbVLtg0e2DT7IWlaheaT+2E6fTnuKHcjybdSTACWw8/p0OQq4JsOge55Ty62ypxy1wJf+t5eI2nIDcr4DCqwBm1YHokO+L9Eu7He5Ac9GIi7MJ4SMB40ImJkICpfhEzIzcRDQjwOTkw3m4/BYZHqT8zC3lskqSRONyRUbiGRuGJjsEXm6BQ6g78Q8MkShIxZtFLDXKI9D1jUHn6SeUOkVLsg1LoQ6UrSJWeMOl7YjBIfdTicBHTJnhIL3aTWo7QOTGIat8gVUsD//MNksoThtYfpauubjLZBWJ4tydrDw7RzcRdSBMz1Ju6h57k3Zy5v5WYpWDmPjzhCFlF1zPGzncmA329j6aSyexkIkGpqUkavx3LSU5N0nQ6SXem09mBcPAvm9WSYPS1NQLHsQmfT3oqSR5y2HniOljiOtpz75M8JMvSUwvHJi7X1jj/A/bDOz2bFlgiAAAAAElFTkSuQmCC" alt="home screen app" data-src="/assets/images/index/screenshot-1.png" width="1280" height="2642">
+            </figure>
+        </div>
+        <div class="basis-1/3 items-center pt-10 md:pt-0">
+            <figure class="mx-auto w-72 h-auto">
+                <img class="w-full rounded-xl lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAZCAYAAAAFbs/PAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/0lEQVR4nH2UC2/aVhTH/T2n7bNsrVpN3SPrF5i2QBPoGq1KSpqELECwDcnWJmpjMBCcQNK1xfj9wjb3/Kd7gWittF3pr+PH+fmc/31Yerz2/U6x8IteebHNNooFun/vG/rqyy+E7t/7moqFddrZfs7Wf/25u/bDo21p69lTvdlsmL2eTiftFpXLJXr48IFQuVSidrtFut6l5nF9svVbuSs1GnVmGAYRANt2SNM07O3tCWkXF7Ati4gIxvCS1WtHc6nVUmk8HhFjRLPZDFEUkeu65HkeRXFCsywDATQej6mlKiSpqkyDQZ9838d0atJ0OiXTNGHaNkzXp4kfkjfL0DcMUuQmSW1VocvLAQVBAJ5sWRaPsBwXUy+A6UfkpzkGxhUpCgdaKq4MA8lsBs914dkWXMuE69rwwghulCDOGYbX11AUGdLpSRvv/34HMbj1eQbk6SIuHoKPd7c3aKkypJO2ipubsXiYpSmyJEYahyLmeYYsW4Dj0Qiq0gT3IG741KVpijxbJK2Upql4NxpdLwBZacC4GiLNUsRxDD61POk/gbp8hIHRR5IlfA2QJIlIms/nYIyJyAdvW3g4lPfRHXYQJAECPxAQr7JKZIyJeHuzNH10fAB90EEQB/A9H3w9eGu8Hd4KWwJ3FY7rVfR1DWHow/sf4HYFNOuHGPS6iKMQvh8gDMNP2mKfA/VGFb1+B2EUiK9zgIubz/P8zssdUF2ZnoV3AK/w75n6BKgdH6C3NO15HviuXflYrcnnpqmva+T7LizLItu24TiOAJci3tpodE0tVSZumga9DgW+B9u2OSC2+FLinvu5MoaL81BrHNC59oY+WFN6/3ECyxIHiCbmZBVFlX5PJ7nZIOlltcL+fHtOH1wHE9slj1dyHCHX8+C4rjhcnY5Gh9X9ubS5WehUDvYnp2dn7PT1a3r16i/xp2i3VXF9fn5GF2/fsFrtj4/l0oYmrX337fONJwVtd/dFXqns0Nazp/SkuC7Er3crO7T3spKXNovaTz8++v0fPwc3EWcuiQ0AAAAASUVORK5CYII=" alt="home screen app" data-src="/assets/images/index/screenshot-2.png" width="1280" height="2642">
+            </figure>
+        </div>
+        <div class="basis-1/3 items-center pt-10 md:pt-0">
+            <figure class="mx-auto w-72 h-auto">
+                <img class="w-full rounded-xl lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAZCAYAAAAFbs/PAAAACXBIWXMAAAsTAAALEwEAmpwYAAACw0lEQVR4nHVTDU/aYBDu/3Tut2ya6GJmNPsByzYQxek0OufHRmkpIBqzRKUfMFE+lkwQWkoLbSnv3XIvlDjNmjztm+aee567e094t/J2Px77YBx83WOJeAzm517Dy9kZmH0xA/Nzr2At9gn293ZZ7ON7fWV5aU/Y3v5sKErmoVwuwflZATY3k/BmcQEWFxcgmdyAQuEUDEMHJSO1tj8ndUGS0qxSuYERY9jpdEBVVTw+PuYoqip2TBMYA7yt3DApLY4EWZaAsjuOC06vh71eD2zbBvr2+33wPA8ZY1CrVSGfy4IgpUXQdQ0sy8Jutwuu64Lv+zgBEWA0GmH17hZy2QwIafEHqMVraD+0sP3Qgm7XQsdx0HVdHAwGhH8JSkbCcslAp2ej3TXRdXrY7/d5MKkEQYD01Os1zOeyKGRkCQ1d48GddgstyyRrVMtExUMGY8JpRCiVdLRtGyM7lJ2K9XwfB94jQj6LgiyJXMHqWmiaJicSiWw9ttSo18cKUjqFqnqN7Xab5sCtRMFhGFJLOeF3ox4ppPDq8ife3//BZrM59U6WhsMhUofGhMaYkFXSqKlXaJptpFmQBQoiUHY2VZgQFFlEXb3Gnt3lmaMAegDguSVFTmPJ0NF1x92hAAqMwJ7XIKKmFnl3qNj/ExoThYw8HpxNxTrcOwVGluA5QcJyucSze4PBlPBUoTGtIUNXQ+fXgUB1UKci+L7PifXaZNJZRYZf5RJda4yu9hMCkMN6vQan+SwI9Lqt3PBFmRCABjYBBEHAC2pEhLNCHuiuh2HIScMwhGA4Bv0jIgBAtXoH+ZxCG5diZInkabu8IEB34HHQOVKkNRZT30fC1uaGJktiS9NURpt3eXUJ5xcXHHTW1CIYusYycrq5mVxXhdXlpd3k+pp6cnQYHh0ewM6XLVhPxCGRiPMz/Ts5+hZSzOry0s5fZlM61DVVaZAAAAAASUVORK5CYII=" alt="home screen app" data-src="/assets/images/index/screenshot-3.png" width="1280" height="2642">
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="main-container py-10 pb-44">
+    <div class="flex py-20">
+        <h2 class="flex-1 text-5xl text-center font-bold">Wanna help?</h2>
+    </div>
+    <div class="flex flex-col md:flex-row flex flex-col md:flex-row pt-10 justify-center">
+        <div class="flex-1 md:px-2 space-y-8">
+            <div>
+                <h3 class="text-xl font-semibold">App</h3>
+                <p>Help is needed to build the mobile app using Flutter and design it</p>
+            </div>
+        </div>
+        <div class="flex-1 md:px-2 pt-10 md:pt-0 space-y-6">
+            <div>
+                <h3 class="text-xl font-semibold">Add info</h3>
+                <p>Help is needed to add more additives  and info to the database</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+      <footer class="text-black pb-20 pt-14 sm:pt-20 md:pt-32 main-container flex-row md:flex px-2 md:px-0">
+  <div class="pt-1 pb-3 md:pb-0 text-center md:text-left">
+    <p class="text-gray-500 inline-block align-middle">Open Additives - GNU General Public License v3.0</p>
+  </div>
+  <div class="flex-1"></div>
+  <div class="flex-none mt-4 md:mt-0">
+    <div class="flex justify-around items-center space-x-2 md:space-x-6">
+      <a aria-label="email" target="_blank" href="mailto:openadditives@gmail.com@gmail.com?subject=Hi">
+        <svg class="fill-gray-500 hover:hover-link" width="28px" height="28px"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Mail</title><path d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"></path></svg></svg>
+      </a>
+      
+    </div>
+  </div>
+</footer>
+    </main>
+    <script defer="" src="/js/alpine.js?v=3.10.4"></script>
+  
+<script>
+            (function (selector, src, preferNativeLazyLoad) {
+  var images = document.querySelectorAll(selector);
+  var numImages = images.length;
+
+  if (numImages > 0) {
+    if (preferNativeLazyLoad && 'loading' in HTMLImageElement.prototype) {
+      for (var i = 0; i < numImages; i++) {
+        var keys = ['src', 'srcset'];
+
+        for (var j = 0; j < keys.length; j++) {
+          if (images[i].hasAttribute('data-' + keys[j])) {
+            var value = images[i].getAttribute('data-' + keys[j]);
+            images[i].setAttribute(keys[j], value);
+          }
+        }
+      }
+
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.body.appendChild(script);
+  }
+})(
+              'img',
+              'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+              false
+            );
+          </script></body></html>
